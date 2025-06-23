@@ -5,7 +5,7 @@ import Hero from "../components/hero/Hero";
 import Divider from "../components/Divider";
 import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
-import Footer from "../components/footer/footer";
+import Footer from "../components/footer/Footer";
 import Skills from "../components/Skills";
 
 const HomePage = () => {
