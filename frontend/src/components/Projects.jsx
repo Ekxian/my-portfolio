@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 import "./component.css";
 
-import P1 from "../assets/p1.png";
-import P2 from "../assets/p2.png";
+import P1 from "../assets/P1.png";
+import P2 from "../assets/P2.png";
 
 const Projects = () => {
   const projects = [
