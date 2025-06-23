@@ -1,0 +1,67 @@
+.navbar-top {
+  z-index: 1020; /* Ensure it stays on top of other elements */
+  height: 60px;
+
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Ensure the container uses flex properties */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+}
+
+/* Remove the default border */
+.navbar-toggler {
+  border: none;
+  background: transparent;
+}
+
+/* Customize the icon's color */
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgb(0, 52, 209)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.nav-item-css {
+  border-bottom: solid transparent;
+  transition: border-bottom 0.3s ease-in-out, background 0.3s ease-in-out,
+    -webkit-text-fill-color 0.3s ease-in-out;
+}
+
+.nav-item-css:hover {
+  border-bottom: solid rgb(0, 52, 209) !important;
+
+  /* gradient text */
+  background: #0034d1;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 52, 209, 1) 0%,
+    rgba(162, 87, 199, 1) 50%,
+    rgba(237, 83, 132, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Flexbox for navbar to handle logo and toggle */
+.navbar-brand,
+.navbar-toggler {
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+}
+
+.scrolled {
+  background-color: rgb(255, 255, 255) !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.316);
+  max-width: 90%; /* Adjust width */
+  margin: 0 auto; /* Centers it with equal margins */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+@media (max-width: 991.98px) {
+  /* Bootstrap's lg breakpoint */
+  .navbar-top .container {
+    border-radius: 0.5rem !important; /* or use 'rounded' class effect */
+  }
+}

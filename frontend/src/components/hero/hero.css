@@ -1,0 +1,20 @@
+.name-item-css {
+  border-bottom: solid transparent;
+  transition: border-bottom 0.3s ease-in-out, background 0.3s ease-in-out,
+    -webkit-text-fill-color 0.3s ease-in-out;
+}
+
+.name-item-css:hover {
+  /* border-bottom: solid rgb(0, 52, 209) !important; */
+
+  /* gradient text */
+  background: #0034d1;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 52, 209, 1) 0%,
+    rgba(162, 87, 199, 1) 50%,
+    rgba(237, 83, 132, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

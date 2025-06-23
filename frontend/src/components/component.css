@@ -1,0 +1,47 @@
+.section-item-css {
+  display: inline-block; /* ✅ limits background to text only */
+  font-weight: bold;
+  font-size: 1.5rem;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 52, 209, 1) 0%,
+    rgba(162, 87, 199, 1) 50%,
+    rgba(237, 83, 132, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-card {
+  width: 100px;
+  height: 100px; /* a bit taller for text */
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.3s;
+}
+
+.icon-box {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.skill-icon {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+.p-title {
+  font-size: 12px;
+}
